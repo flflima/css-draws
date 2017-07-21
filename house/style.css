@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.square, .circle {
+  width: 150px;
+  height: 150px; }
+
+.square, .circle, .triangle, .telhado {
+  display: inline-block; }
+
+.square {
+  background-color: blue; }
+
+.circle {
+  border-radius: 100%;
+  background-color: yellow; }
+
+.triangle, .telhado {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 150px solid black; }
+
+.telhado {
+  width: 600px !important;
+  border-bottom-color: orange !important;
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px); }
+
+/*# sourceMappingURL=style.css.map */
