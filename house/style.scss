@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$base: 150px;
+%base {
+    width: $base;
+    height: $base;
+}
+
+%display {
+    display: inline-block;
+}
+
+.square {
+    @extend %base;
+    @extend %display;
+    background-color: blue;
+}
+
+.circle {
+    @extend %base;
+    @extend %display;
+    border-radius: 100%;
+    background-color: yellow;
+}
+
+.triangle {
+    @extend %display;
+    width: 0;
+    height: 0;
+    border-left: $base/2 solid transparent;
+    border-right: $base/2 solid transparent;
+    border-bottom: $base solid black;
+}
+
+.telhado {
+    @extend .triangle;
+    width: $base * 4 !important;
+    border-bottom-color: orange !important;
+    background: repeating-linear-gradient( 45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
