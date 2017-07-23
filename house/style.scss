@@ -5,6 +5,9 @@
 }
 
 $base: 150px;
+$brick_color: #D92C0C;
+$front_house: #E8A2A5;
+
 %base {
     width: $base;
     height: $base;
@@ -14,21 +17,18 @@ $base: 150px;
     display: inline-block;
 }
 
-.square {
+%square {
     @extend %base;
-    @extend %display;
     background-color: blue;
 }
 
-.circle {
+%circle {
     @extend %base;
-    @extend %display;
     border-radius: 100%;
     background-color: yellow;
 }
 
-.triangle {
-    @extend %display;
+%triangle {
     width: 0;
     height: 0;
     border-left: $base/2 solid transparent;
@@ -36,9 +36,39 @@ $base: 150px;
     border-bottom: $base solid black;
 }
 
+.casa {
+    margin: auto;
+   // margin-top: $base;
+    width: 50%;
+}
+
 .telhado {
-    @extend .triangle;
+    @extend %triangle;
     width: $base * 4 !important;
-    border-bottom-color: orange !important;
-    background: repeating-linear-gradient( 45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+    border-bottom-color: $brick-color !important;
+    // background: repeating-linear-gradient( 45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
+
+.frente {
+    @extend %square;
+    float: left;
+    margin-left: $base/2;
+    background-color: $front_house !important;
+}
+
+.fundos {
+    @extend .frente;
+    width: 2 * $base;
+    margin-left: 0;
+    margin-right: $base/2;
+    background-color: $front_house !important;
+    border-left: 0.25px solid darken($front_house, 50);
+}
+
+.porta {
+    width: 0.45 * $base;
+    height: 0.6 * $base;
+    margin-top: $base - (0.6 * $base);
+    margin-left: $base/4;
+    background-color: SaddleBrown;
 }

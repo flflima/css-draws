@@ -3,30 +3,45 @@
   padding: 0;
   box-sizing: border-box; }
 
-.square, .circle {
+.frente, .fundos {
   width: 150px;
   height: 150px; }
 
-.square, .circle, .triangle, .telhado {
-  display: inline-block; }
-
-.square {
+.frente, .fundos {
   background-color: blue; }
 
-.circle {
-  border-radius: 100%;
-  background-color: yellow; }
-
-.triangle, .telhado {
+.telhado {
   width: 0;
   height: 0;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
   border-bottom: 150px solid black; }
 
+.casa {
+  margin: auto;
+  width: 50%; }
+
 .telhado {
   width: 600px !important;
-  border-bottom-color: orange !important;
-  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px); }
+  border-bottom-color: #D92C0C !important; }
+
+.frente, .fundos {
+  float: left;
+  margin-left: 75px;
+  background-color: #E8A2A5 !important; }
+
+.fundos {
+  width: 300px;
+  margin-left: 0;
+  margin-right: 75px;
+  background-color: #E8A2A5 !important;
+  border-left: 0.25px solid #6f1c1f; }
+
+.porta {
+  width: 67.5px;
+  height: 90px;
+  margin-top: 60px;
+  margin-left: 37.5px;
+  background-color: SaddleBrown; }
 
 /*# sourceMappingURL=style.css.map */
