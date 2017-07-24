@@ -72,3 +72,13 @@ $front_house: #E8A2A5;
     margin-left: $base/4;
     background-color: SaddleBrown;
 }
+
+.macaneta {
+    width: $base/10;
+    height: $base/10;
+    background-color: DarkGoldenRod;
+    border-radius: 100%;
+    margin-top: $base - (0.75 * $base);
+    margin-left: $base/4;
+    position: absolute;
+}

@@ -1,47 +1,67 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .frente, .fundos {
   width: 150px;
-  height: 150px; }
+  height: 150px;
+}
 
 .frente, .fundos {
-  background-color: blue; }
+  background-color: blue;
+}
 
 .telhado {
   width: 0;
   height: 0;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
-  border-bottom: 150px solid black; }
+  border-bottom: 150px solid black;
+}
 
 .casa {
   margin: auto;
-  width: 50%; }
+  width: 50%;
+}
 
 .telhado {
   width: 600px !important;
-  border-bottom-color: #D92C0C !important; }
+  border-bottom-color: #D92C0C !important;
+}
 
 .frente, .fundos {
   float: left;
   margin-left: 75px;
-  background-color: #E8A2A5 !important; }
+  background-color: #E8A2A5 !important;
+}
 
 .fundos {
   width: 300px;
   margin-left: 0;
   margin-right: 75px;
   background-color: #E8A2A5 !important;
-  border-left: 0.25px solid #6f1c1f; }
+  border-left: 0.25px solid #6f1c1f;
+}
 
 .porta {
   width: 67.5px;
   height: 90px;
   margin-top: 60px;
   margin-left: 37.5px;
-  background-color: SaddleBrown; }
+  background-color: SaddleBrown;
+}
+
+.macaneta {
+  width: 15px;
+  height: 15px;
+  background-color: DarkGoldenRod;
+  border-radius: 100%;
+  margin-top: 37.5px;
+  margin-left: 37.5px;
+  position: absolute;
+}
+
 
 /*# sourceMappingURL=style.css.map */
