@@ -1,67 +1,64 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0; }
 
-.frente, .fundos {
-  width: 150px;
+.frente, .fundos, .janela {
   height: 150px;
-}
+  width: 150px; }
 
-.frente, .fundos {
-  background-color: blue;
-}
+.frente, .fundos, .janela {
+  background-color: blue; }
 
 .telhado {
-  width: 0;
-  height: 0;
+  border-bottom: 150px solid black;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
-  border-bottom: 150px solid black;
-}
+  height: 0;
+  width: 0; }
 
 .casa {
   margin: auto;
-  width: 50%;
-}
+  width: 50%; }
 
 .telhado {
-  width: 600px !important;
   border-bottom-color: #D92C0C !important;
-}
+  width: 600px !important; }
 
 .frente, .fundos {
-  float: left;
-  margin-left: 75px;
   background-color: #E8A2A5 !important;
-}
+  float: left;
+  margin-left: 75px; }
 
 .fundos {
-  width: 300px;
-  margin-left: 0;
-  margin-right: 75px;
   background-color: #E8A2A5 !important;
   border-left: 0.25px solid #6f1c1f;
-}
+  margin-left: 0;
+  margin-right: 75px;
+  width: 300px; }
 
 .porta {
-  width: 67.5px;
-  height: 90px;
-  margin-top: 60px;
-  margin-left: 37.5px;
   background-color: SaddleBrown;
-}
+  height: 90px;
+  margin: auto;
+  margin-top: 60px;
+  width: 67.5px; }
 
 .macaneta {
-  width: 15px;
-  height: 15px;
   background-color: DarkGoldenRod;
   border-radius: 100%;
-  margin-top: 37.5px;
+  height: 15px;
   margin-left: 37.5px;
+  margin-top: 37.5px;
   position: absolute;
-}
+  width: 15px; }
 
+.janela {
+  background-color: Azure;
+  border: 5px solid brown;
+  height: 75px;
+  margin: auto;
+  margin-top: 45px;
+  width: 105px; }
 
 /*# sourceMappingURL=style.css.map */

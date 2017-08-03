@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 $base: 150px;
@@ -9,8 +9,8 @@ $brick_color: #D92C0C;
 $front_house: #E8A2A5;
 
 %base {
-    width: $base;
     height: $base;
+    width: $base;
 }
 
 %display {
@@ -24,16 +24,16 @@ $front_house: #E8A2A5;
 
 %circle {
     @extend %base;
-    border-radius: 100%;
     background-color: yellow;
+    border-radius: 100%;
 }
 
 %triangle {
-    width: 0;
-    height: 0;
+    border-bottom: $base solid black;
     border-left: $base/2 solid transparent;
     border-right: $base/2 solid transparent;
-    border-bottom: $base solid black;
+    height: 0;
+    width: 0;
 }
 
 .casa {
@@ -44,41 +44,50 @@ $front_house: #E8A2A5;
 
 .telhado {
     @extend %triangle;
-    width: $base * 4 !important;
     border-bottom-color: $brick-color !important;
-    // background: repeating-linear-gradient( 45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+    width: $base * 4 !important;
 }
 
 .frente {
     @extend %square;
+    background-color: $front_house !important;
     float: left;
     margin-left: $base/2;
-    background-color: $front_house !important;
 }
 
 .fundos {
     @extend .frente;
-    width: 2 * $base;
-    margin-left: 0;
-    margin-right: $base/2;
     background-color: $front_house !important;
     border-left: 0.25px solid darken($front_house, 50);
+    margin-left: 0;
+    margin-right: $base/2;
+    width: 2 * $base;
 }
 
 .porta {
-    width: 0.45 * $base;
-    height: 0.6 * $base;
-    margin-top: $base - (0.6 * $base);
-    margin-left: $base/4;
     background-color: SaddleBrown;
+    height: 0.6 * $base;
+    margin: auto;
+    margin-top: $base - (0.6 * $base);
+    width: 0.45 * $base;
 }
 
 .macaneta {
-    width: $base/10;
-    height: $base/10;
     background-color: DarkGoldenRod;
     border-radius: 100%;
-    margin-top: $base - (0.75 * $base);
+    height: $base/10;
     margin-left: $base/4;
+    margin-top: $base - (0.75 * $base);
     position: absolute;
+    width: $base/10;
+}
+
+.janela {
+    @extend %square;
+    background-color: Azure;
+    border: $base/30 solid brown;
+    height: 0.5 * $base;
+    margin: auto;
+    margin-top: $base - (0.7 * $base);
+    width: 0.7 * $base;
 }
